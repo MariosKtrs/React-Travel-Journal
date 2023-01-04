@@ -3,14 +3,22 @@
     margin:0;
     font-family: Verdana;
 }
+
 body{
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
+
 .my-app{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .container{
     overflow: hidden;
@@ -118,6 +126,8 @@ body{
     }
     .my-app{
         height: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 }
 h1{
