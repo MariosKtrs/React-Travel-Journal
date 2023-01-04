@@ -50,8 +50,8 @@ body{
     border-radius: 8px;
 }
 .location-image{
-   width: inherit;
-   height: inherit;
+    width: inherit;
+    height: inherit;
     object-fit: cover;
     -webkit-transition-property: all; 
     -webkit-transition-duration: 0.3s; 
@@ -107,8 +107,6 @@ body{
     }
     .location-image{
         margin: 0;
-       
-    
     }
     .wiki-link{
         display:flex;
@@ -124,8 +122,7 @@ body{
     }
     .my-app{
         height: 100%;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin: 15px;
     }
 }
 h1{
@@ -137,11 +134,18 @@ h1{
     margin-top: 7px;
     margin-right:5px;  
 }
-a{
+.map-link{
     margin-left:8px;
     color:rgb(110, 110, 110);
     font-size: 11px;
     text-decoration: none;
+    -webkit-transition-property: all; 
+    -webkit-transition-duration: 0.3s; 
+    -webkit-transition-timing-function: ease; 
+}
+.map-link:hover{
+    cursor: pointer; 
+    transform: scale(1.02);
 }
 .country{
     letter-spacing: 1px;

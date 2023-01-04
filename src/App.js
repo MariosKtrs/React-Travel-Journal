@@ -12,13 +12,12 @@ export default function App() {
     })
 
   return (
-  <div className="my-app">
-    <div className="container">
-      <Header/>
-      {map}
-    </div>
-  </div>
-  
+    <div className="my-app">
+      <div className="container">
+        <Header/>
+        {map}
+      </div>
+    </div> 
   );
 }
 

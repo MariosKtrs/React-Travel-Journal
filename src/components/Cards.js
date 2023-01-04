@@ -8,18 +8,18 @@ library.add(faLocationPin)
 export default function Cards (props) {
     return(
         <div className="card">
-            <a className="wiki-link" href={props.wiki}>
+            <a className="wiki-link" href={props.wiki} target="_blank">
                 <img className="location-image" src={process.env.PUBLIC_URL +`/images/${props.imagePath}`}/> 
             </a>
             <div className ="info">
                 <div className="location-line">
                     <FontAwesomeIcon icon={faLocationPin} className="location-pin"/>    
                     <p className="country">{props.country}</p>
-                    <a href={props.googleMaps} target="_blank">View on Google Maps</a>
+                    <a className="map-link"href={props.googleMaps} target="_blank">View on Google Maps</a>
                 </div>
-            <h1>{props.location}</h1>
-            <p className="date">{props.date}</p>
-            <p className="description">{props.description}</p>
+                <h1>{props.location}</h1>
+                <p className="date">{props.date}</p>
+                <p className="description">{props.description}</p>
             </div>
         </div>
     )
